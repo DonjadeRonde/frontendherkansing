@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="../js/javascript.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Expletus+Sans|Ravi+Prakash" rel="stylesheet">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widt, inital-scale=1.0">
+    <title>Donja Portfolio</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header> <img src="img/logo.png" alt="Donja de Ronde logo" class="logo" id="logoImage">
+        <div class="logo" id="logoName">
+            <h1 class="webTitle title">Donja<br>de Ronde</h1> </div>
+    </header>
+    <nav class="mainNav">
+        <ul class="mainNav" id="listContainer">
+            <li class="navItem" id="navItem1"><a class="navText" href="#About">Over mij</a></li>
+            <li class="navItem" id="navItem2"><a class="navText" href="#Work">Portfolio</a></li>
+            <li class="navItem" id="navItem3"><a class="navText" href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!--OVER MIJ--><img src="img/mahFace.jpg" alt="An image of my beautiful face" class="image" id="myImage" onclick='imageRoulette()'>
+    <div class="textBlock" id="About">
+        <h2 class="title">Wie ben ik?</h2>
+        <p>Hi allemaal! Mijn naam is Donja, ik studeer Communication & Multimedia Design. Leuk dat je een kijkje neemt op mijn portfolio. Hier vind je al mijn werk van de afgelopen jaren CMD, mijn eigen kunst en andere design opdrachten gemaakt tijdens mijn stageperiodes.</p>
+    </div>
+    <!--PORTFOLIO-->
+    <h2 class="title" id="Work">Mijn Werk</h2>
+    <article class="portoWerk" id="portoWerk1">
+        <h3 class="title">CMD pagina</h3>
+        <p class="portoText"></p><i onclick='likeToggle(1)' class="fas fa-heart" id="likeHeart1"></i> <i onclick='likeToggle(2)' class="fas fa-heart" id="likeHeart2"></i> <i onclick='likeToggle(18)' class="fas fa-heart" id="likeHeart18"></i> <i onclick='likeToggle(1861863513548)' class="fas fa-heart" id="likeHeart1861863513548"></i></article>
+    <article class="portoWerk" id="portoWerk2">
+        <h3 class="title">Gamerhub pagina</h3>
+        <p class="portoText"></p>
+    </article>
+    <article class="portoWerk" id="portoWerk3">
+        <h3 class="title">The Knowledge Mile</h3>
+        <p class="portoText"></p>
+    </article>
+    <article class="portoWerk" id="portoWerk4">
+        <h3 class="title">Gamerhub</h3>
+        <p class="portoText"></p>
+    </article>
+    <article class="portoWerk" id="portoWerk5">
+        <h3 class="title">Fitzroy vormgeving</h3>
+        <p class="portoText"></p>
+    </article>
+    <article class="portoWerk" id="portoWerk6">
+        <h3 class="title">E-health ontwerp</h3>
+        <p class="portoText"></p>
+    </article>
+    <!--CONTACT-->
+    <h2 class="title" id="Contact">Neem contact met mij op</h2>
+    <form class="contactForm">
+        <fieldset>
+            <legend>Contactgegevens</legend>
+            <label>
+                <input name="name" type="text" class="form-control" placeholder="Je naam" required> </label>
+            <label>
+                <input type="tel" class="form-control" id="phone" name="phoneNumber" placeholder="Telefoonnummer" required> </label>
+            <label>
+                <input name="email" type="email" class="form-control" placeholder="E-mailadres"> </label>
+            <!--<label>
+                    <textarea name="comments" type="comments" name="message"></textarea>
+                </label>-->
+            <input type="submit" class="form-control submit" value="Verstuur"> </fieldset>
+    </form>
+    <!--FOOTER-->
+    <button onclick="topFunction()" id="myButton" title="Naar boven">Omhoog</button>
+    <footer>
+        <h2 class="title">Volg mij op</h2>
+        <div class="media">
+            <ul>
+                <li><a href="https://www.instagram.com/xdonjaa/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/eendiabetes"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/eendiabetes"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
